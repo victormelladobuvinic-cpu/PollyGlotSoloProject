@@ -1,10 +1,16 @@
+import dotenv from "dotenv"
+dotenv.config()
+
+
 
 import Groq from "https://cdn.jsdelivr.net/npm/groq-sdk/+esm";
 const client = new Groq({
-    apiKey: "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",
+    apiKey: process.env.GROQ_API_KEY,
     /* baseURL: "https://api.groq.com/openai/v1", */
     dangerouslyAllowBrowser: true
 });
+
+
 
 const translateBtn = document.getElementById("translate-btn")
 const phrase = document.getElementById("text-area")
