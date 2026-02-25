@@ -5,8 +5,8 @@ dotenv.config()
 
 import Groq from "https://cdn.jsdelivr.net/npm/groq-sdk/+esm";
 const client = new Groq({
-    apiKey: process.env.GROQ_API_KEY,
-    /* baseURL: "https://api.groq.com/openai/v1", */
+    apiKey: /* process.env.GROQ_API_KEY */,
+    
     dangerouslyAllowBrowser: true
 });
 
