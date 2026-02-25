@@ -4,10 +4,50 @@
     <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google fonts Roboto & Big shoulders -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    
+    <header class="hero-content">
+        <img src="assets/parrot.png" alt="a colorfull parrot" class="head-img">
+        <div class="head-info">
+            <h1 class="title">PollyGlot</h1>
+            <p class="sub-title">Perfect Translation Every Time</p>
+        </div>
+    </header>
+    <main class="main-content">
+        
+        <div class="leng">
+
+            <form>
+                <h2 class="section-title">Text to translate 👇</h2>
+                <textarea id="text-area"
+                 placeholder="How are you?" required></textarea> 
+                <h2 class="section-title">Select language 👇</h2>
+                <div class="option-row">
+                    <input required type="radio" id="french" name="leng">
+                    <label for="french"> French  </label>
+                    <img class="flag"src="assets/fr-flag.png" alt="france flag" class="flag">
+                </div>
+                <div class="option-row">
+                    <input required type="radio" id="esp" name="leng">
+                    <label for="esp"> Spanish </label>
+                    <img class="flag"src="assets/sp-flag.png" alt="spain flag" class="flag">
+                </div>
+                <div class="option-row">
+                    <input required type="radio" id="japan" name="leng">
+                    <label for="japan"> Japan</label>
+                    <img class="flag" src="assets/jpn-flag.png" alt="japan flag" class="flag" id="jpn-flag">
+                </div>
+                <button id="translate-btn" type="submit" class="btn-translate">Translate 🦜 </button>
+
+            </form>
+        </div>
+
+    </main>
 
     <script src="index.js" type="module"></script>
 </body>

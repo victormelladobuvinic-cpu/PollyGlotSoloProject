@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    width: 400px;
+    height: 800px;
+    text-align: center;
+    /* flex */
+    display: flex;
+    flex-direction: column;
+}
+
+/* hero section */
+
+.title {
+    font-family: "Big Shoulders", sans-serif;
+    color: #32CD32;
+
+}
+.sub-title {
+    color:#FFFFFF;
+}
+header {
+    background-image: url("/assets/worldmap.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    gap: 10px;
+    height: 200px;
+
+
+}
+header img {
+    width: 100px;
+
+}
+.head-info {
+    text-align: start;
+}
+
+/* main section */
+
+.section-title {
+    color: #035A9D;
+}
+
+.main-content {
+    border: solid 2px black;
+    border-radius: 5px;
+    margin: 1.5rem 1rem;
+    height: 100%;
+    /* flex */
+    flex-grow: 1;
+
+}
+
+.option-row {
+    display: flex;
+    align-items: center;
+    width: 120px;
+    text-align: left;
+    gap: 8px; 
+}
+
+.flag {
+    width: 30px
+}
+
+#jpn-flag {
+    border: 1px solid #999999;
+    
+}
+
+.option-row label {
+    cursor: pointer;
+    flex-grow: 1; 
+}
+
+.leng{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+    flex-grow: 1;
+
+    
+    
+    }
+
+    form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+    width: 100%;
+    height: 100%;
+    gap: 15px; 
+}
+
+textarea {
+    width: 70%;
+    height: 100px;
+    margin-bottom: 1rem;
+    padding: 10px;
+    resize: none; 
+    border: none;
+    border-radius: 5px;
+    background: #EFF0F4;
+}
+    /* boton */
+
+    .btn-translate {
+    margin-top: 2rem;
+    width: 220px;
+    padding: 12px;
+    background-color: #035A9D; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-translate:hover {
+    background-color: #035A9D; 
+}
+
+.btn-translate:active {
+    transform: translateY(2px); 
+    box-shadow: none;
+}
