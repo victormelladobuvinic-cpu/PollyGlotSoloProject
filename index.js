@@ -38,7 +38,7 @@ addEventListener("click", (e) => {
         };
 
         translateBtn.classList.add("hidden")
-        document.querySelector(".option-row").classList.add("hidden")
+        document.getElementById("hidden-section").classList.add("hidden")
         document.getElementById("select-language").classList.add("hidden")
 
         renderAnswer(phrase.value,selectedLanguage.value)
@@ -51,9 +51,9 @@ addEventListener("click", (e) => {
     divForAnswer.innerHTML = ` 
     
     <div class="result-card">
-            <p><strong>Original:</strong> ${phrase}</p>
-            <p><strong>Idioma:</strong> ${language}</p>
-            <p><em>Traducción en camino...</em> 🦜</p>
+            <h2 id="select-language" class="section-title">Your translation 👇</h2>
+            <textarea id="answer-area">Original:${phrase} Idioma:${language} Traducción en camino... 🦜</textarea>  
+            <button id="start-over" class="btn-translate" disabled >Start Over</button>
         </div>
         `
  }
