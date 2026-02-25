@@ -22,28 +22,30 @@
         
         <div class="leng">
 
-            <form>
+            <form id="language-form">
                 <h2 class="section-title">Text to translate 👇</h2>
                 <textarea id="text-area"
                  placeholder="How are you?" required></textarea> 
-                <h2 class="section-title">Select language 👇</h2>
-                <div class="option-row">
-                    <input required type="radio" id="french" name="leng">
-                    <label for="french"> French  </label>
-                    <img class="flag"src="assets/fr-flag.png" alt="france flag" class="flag">
-                </div>
-                <div class="option-row">
-                    <input required type="radio" id="esp" name="leng">
-                    <label for="esp"> Spanish </label>
-                    <img class="flag"src="assets/sp-flag.png" alt="spain flag" class="flag">
-                </div>
-                <div class="option-row">
-                    <input required type="radio" id="japan" name="leng">
-                    <label for="japan"> Japan</label>
-                    <img class="flag" src="assets/jpn-flag.png" alt="japan flag" class="flag" id="jpn-flag">
-                </div>
-                <button id="translate-btn" type="submit" class="btn-translate">Translate 🦜 </button>
-
+                <h2 id="select-language" class="section-title">Select language 👇</h2>
+                <div id="answer-section"><!-- aqui va la renderizacion con JS --></div>
+                <div id="hidden-section">
+                    <div class="option-row">
+                        <input required type="radio" id="french" name="leng" value="French">
+                        <label for="french"> French  </label>
+                        <img class="flag"src="assets/fr-flag.png" alt="france flag" class="flag" >
+                    </div>
+                    <div class="option-row">
+                        <input required type="radio" id="esp" name="leng" value="Spanish">
+                        <label for="esp"> Spanish </label>
+                        <img class="flag"src="assets/sp-flag.png" alt="spain flag" class="flag" >
+                    </div>
+                    <div class="option-row">
+                        <input required type="radio" id="japan" name="leng" value="Japan">
+                        <label for="japan"> Japan</label>
+                        <img class="flag" src="assets/jpn-flag.png" alt="japan flag" class="flag"  id="jpn-flag">
+                    </div>
+                    <button id="translate-btn" type="submit" class="btn-translate" disabled >Translate 🦜 </button>
+                </div>   
             </form>
         </div>
 
