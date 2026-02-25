@@ -20,6 +20,8 @@ body {
 .title {
     font-family: "Big Shoulders", sans-serif;
     color: #32CD32;
+    font-size: 2.5rem;
+    margin-bottom: 0;
 
 }
 .sub-title {
