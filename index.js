@@ -1,8 +1,8 @@
 
-import OpenAI from "groq-sdk";
-const client = new OpenAI({
-    apiKey: process.env.GROQ_API_KEY,
-    baseURL: "https://api.groq.com/openai/v1",
+import Groq from "https://cdn.jsdelivr.net/npm/groq-sdk/+esm";
+const client = new Groq({
+    apiKey: "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",
+    /* baseURL: "https://api.groq.com/openai/v1", */
     dangerouslyAllowBrowser: true
 });
 
@@ -68,7 +68,7 @@ async function translateAnswer(phrase, language) {
         const messages = [
             {
                 role: "system",
-                content: `You are a professional translator. Translate the user's text to ${language}. Return only the translation, no extra text.`,
+                content: `You are a professional translator. Translate the user's text to ${language}. Return only the translation and how it's pronunciate, write the pronunciation in english no extra text.`,
             },
             {
                 role: "user",
